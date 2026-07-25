@@ -3,3 +3,7 @@
 
 # Ignore log folders
 logs/
+
+
+# Ignore merge backup files
+*.orig
