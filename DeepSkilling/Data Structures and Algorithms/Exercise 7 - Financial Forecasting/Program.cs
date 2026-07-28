@@ -4,16 +4,13 @@ namespace FinancialForecasting
 {
     class Program
     {
-        // Recursive function to calculate future value
         static double Forecast(double currentValue, double growthRate, int years)
         {
-            // Base case
             if (years == 0)
             {
                 return currentValue;
             }
 
-            // Recursive call
             return Forecast(currentValue * (1 + growthRate), growthRate, years - 1);
         }
 
